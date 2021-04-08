@@ -20,10 +20,11 @@ class Calculator extends Component {
   render() {
     return(
       <>
-        <CalcButton buttonValues={[1,2,3,4,5,6,7,8,9,0, "+", "-","*","/", "=", ".", "%","+/-", "C"]} handler={this.handler}/>
-        <form>
-          <input id="calcScreen" type="text" onChange={myFunction} value={this.state.lastValue}/>
+        <form className="text-center calc-form">
+          <input id="calcScreen" className="calc-display" type="text" onChange={myFunction} value={this.state.lastValue}/>
         </form>
+        <CalcButton buttonValues={["C","+/-","%","÷",7,8,9,"x",4,5,6,"-",1,2,3,"+",0,".", "="]} handler={this.handler}/>
+
       </>
     );
   }

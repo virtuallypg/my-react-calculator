@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url('./images/space-background.jpg');
+  background-repeat:repeat-y;
+  background-size: cover;
+}
+
+button {
+  color: SkyBlue;
+  background-color: Transparent;
+  border: 50px;
+}
+
+.calc-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 7px;
+  font-size: 36px;
+  margin: 2px;
+}
+
+.keypad {
+  width: 300px;
+  display: inline-block;
+}
+
+.wide-btn {
+  width:154px;
+}
+
+.calc-display {
+  width: 310px;
+  background-color: Transparent;
+  border-color: SkyBlue;
+  color: SkyBlue;
+  font-size: 36px;
+  padding: 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 7px;
+  margin-left: -13px;
+}
+
+.calc-form {
+  width:100%;
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+
+@media (min-width: 768px) {
+
+  .calc-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 7px;
+    font-size: 52px;
+  }
+
+  .keypad {
+    width:auto;
+    display: inline-block;
+    margin-top: 0px;
+  }
+
+  .wide-btn {
+    width:204px;
+  }
+
+  .calc-display {
+    width: 410px;
+    font-size: 46px;
+    margin-left: 0px;
+
+  }
+}
