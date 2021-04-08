@@ -60,7 +60,7 @@ class CalcButton extends Component {
         this.props.handler(displayStr);
       }
     }
-    else if (/[+\-x/]/.test(btnValue)) {
+    else if (/[+\-x÷]/.test(btnValue)) {
         this.setState({previousValueString: this.state.currentValueString});
         this.setState({currentValueString: "0"});
         this.setState({currentMathFunction: btnValue});
